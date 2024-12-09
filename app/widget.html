@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NexGen Project Management Kanban Board</title>
 
-    <!-- Zoho Creator SDK -->
-    <script src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
-
-    <!-- 2. React & React DOM -->
+    <!-- Core React Libraries -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-        
-    <!-- 3. TanStack Query -->
-    <script src="https://unpkg.com/@tanstack/react-query@4/build/umd/index.production.js"></script>
-        
-    <!-- 4. Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-        
-    <!-- 5. Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- Styling & UI Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/class-variance-authority@0.7.0/dist/index.js"></script>
+    <script src="https://unpkg.com/clsx@2.0.0/dist/clsx.min.js"></script>
+    <script src="https://unpkg.com/tailwind-merge@2.0.0/dist/bundle-full.min.js"></script>
+
+    <!-- UI Components -->
+    <script src="https://unpkg.com/@radix-ui/react-dialog@1.0.4/dist/index.js"></script>
+
+    <!-- Data Management -->
+    <script src="https://unpkg.com/@tanstack/react-query@4/build/umd/index.production.js"></script>
+
+    <!-- Zoho Integration -->
+    <script src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+
+    <!-- Utility Functions -->
+    <script src="src/utils/cn.js"></script>
   </head>
   <body>
-    <h2>This is a sample Widget built using Zoho Extension toolkit.</h2>
-  </body>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <script src="src/main.js"></script>
+</body>
 </html>
